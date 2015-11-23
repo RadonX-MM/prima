@@ -99,8 +99,8 @@ PATCHLEVEL=$(shell grep -w "PATCHLEVEL =" $(TOP)/kernel/Makefile | sed 's/^PATCH
 include $(CLEAR_VARS)
 LOCAL_MODULE              := wlan.ko
 LOCAL_MODULE_KBUILD_NAME  := wlan.ko
-LOCAL_MODULE_TAGS         := debug
-LOCAL_MODULE_DEBUG_ENABLE := true
+LOCAL_MODULE_TAGS         := 
+LOCAL_MODULE_DEBUG_ENABLE := false
 LOCAL_MODULE_PATH         := $(TARGET_OUT)/lib/modules/
 include $(DLKM_DIR)/AndroidKernelModule.mk
 ###########################################################
